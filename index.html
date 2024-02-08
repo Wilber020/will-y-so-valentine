@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibñe" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La propuesta más cool de todas :3 </title>
+
+    <style>
+    .body{
+        background-color: deeppink;
+        text-align: center;
+    }
+    .body_tittle {
+        color:beige;
+    }
+    .segundo_texto {
+        color: brown;
+        }
+    .body_img {
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body_tittle">Hola preciosa</h1>
+    <h2 class="segundo_texto">¿puedo ser tu San Valentín?</h2>
+    
+     <img src="https://i.pinimg.com/564x/92/dd/3f/92dd3f4640501da7fa32d49345459ff4.jpg" alt="" class="body_img">
+    <button id="yes">Sí</button>
+    <button id="no">No</button>
+
+    <script>
+        const vutonSi = document.getElementById('yes');
+        const vutonNo = document.getElementById('no');
+
+        const EresLaMejor = () => {
+            alert('Sabía que dirías que sí, eres la mejor ❤️');
+            location.href = 'https://www.youtube.com/watch?v=sXCPwNpuulY';
+        }
+        const ContigoTodoEsMAsFacil = () => {
+            vutonNo.style.position = 'absolute';
+            vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+            vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+        }
+        vutonSi.addEventListener('click', EresLaMejor);
+        vutonNo.addEventListener('mouseover', ContigoTodoEsMAsFacil);
+    </script>
+</body>
+</html>
